@@ -2,10 +2,14 @@ package org.example;
 
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        /*
+        Eski Hali;
+
         List<Integer> numbers = new ArrayList<>();
 
         numbers.add(1);
@@ -13,6 +17,9 @@ public class Main {
         numbers.add(3);
         numbers.add(4);
         numbers.add(5);
+         */
+
+        List<Integer> numbers =  Arrays.asList(1,2,3,4,5);
 
 
         // Sayıları iki katına çıkarma (Geleneksel yöntem)
@@ -34,7 +41,7 @@ public class Main {
         }
          */
 
-        //Sonuçları yazdırma Lambda ile
+        //Sonuçları yazdırma
         numbers.forEach(System.out::println);
     }
 }
